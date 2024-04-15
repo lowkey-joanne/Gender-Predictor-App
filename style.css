@@ -1,0 +1,164 @@
+/* Container styling */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Heading 2 styling */
+  h2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  /* Styling for search input and buttons */
+  #search, #btnSearch, #btnClear {
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 4px;
+    margin: 30px 0;
+  }
+  
+  /* Input and button styling */
+  input, button {
+    border: 1px solid lightgray;
+    color: teal;
+  }
+  
+  /* Input focus styling */
+  input:focus {
+    border: 1px solid lightgray;
+    color: black;
+    outline: none;
+  }
+  
+  /* Search button styling */
+  #btnSearch {
+    cursor: pointer;
+    background-color: lightgreen;
+    border: 1px solid transparent;
+  }
+  
+  /* Clear button styling */
+  #btnClear {
+    cursor: pointer;
+    background-color: red;
+    border: 1px solid transparent;
+  }
+  
+  /* Search button icon color */
+  #btnSearch i {
+    color: maroon;
+  }
+  
+  /* Clear button icon styling */
+  #btnClear i {
+    padding: 10;
+    color: #2a324b;
+  }
+  
+  /* Table design code */
+  
+  /* Color variables */
+  :root {
+    /* Add your color variables here */
+  }
+  
+  /* Reset styles for consistency */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Mukta, sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-gray500);
+    font-size: 0.9rem;
+    background-color: peru;
+  }
+  
+  /* Table styles */
+  table {
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px var(--clr-gray300);
+    background-color: lightcyan;
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  /* Table header styles */
+  thead {
+    box-shadow: 0 5px 10px var(--clr-gray300);
+  }
+  
+  /* Table header cell styles */
+  th {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+  }
+  
+  /* Table data cell styles */
+  td {
+    padding: 1rem 2rem;
+  }
+  
+  /* Link styles */
+  a {
+    text-decoration: none;
+    color: var(--clr-link);
+  }
+  
+  /* Status styles */
+  .status {
+    border-radius: var(--radius);
+    background-color: red;
+    padding: 0.2rem 1rem;
+    text-align: center;
+  }
+  
+  /* Pending status styles */
+  .status-pending {
+    background-color: var(--clr-pending);
+    color: var(--clr-pending-font);
+  }
+  
+  /* Paid status styles */
+  .status-paid {
+    background-color: var(--clr-paid);
+    color: var(--clr-paid-font);
+  }
+  
+  /* Unpaid status styles */
+  status-unpaid {
+    background-color: var(--clr-unpaid);
+    color: var(--clr-unpaid-font);
+  }
+  
+  /* Amount styles */
+  .amount {
+    text-align: right;
+  }
+  
+  /* Alternating row color */
+  tr:nth-child(even) {
+    background-color: var(--clr-gray150);
+  }
+  
+  /* Footer styles */
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70vh;
+  }
+  
