@@ -60,9 +60,9 @@
   /* Table design code */
   
   /* Color variables */
-  :root {
+  :root >
      /* Add your color variables here */
-  }
+  
   
   /* Reset styles for consistency */
   *,
