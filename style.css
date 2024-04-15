@@ -121,7 +121,7 @@
   /* Status styles */
   .status {
     border-radius: var(--radius);
-    background-color: rgb(7, 42, 65);
+    background-color: rgb(196, 67, 8);
     padding: 0.2rem 1rem;
     text-align: center;
   }
