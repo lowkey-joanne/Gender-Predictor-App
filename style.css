@@ -28,7 +28,7 @@
   /* Input focus styling */
   input:focus {
     border: 1px solid lightgray;
-    color: black;
+    color: rgb(160, 54, 54);
     outline: none;
   }
   
