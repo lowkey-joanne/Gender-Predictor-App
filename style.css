@@ -35,7 +35,7 @@
   /* Search button styling */
   #btnSearch {
     cursor: pointer;
-    background-color: lightgreen;
+    background-color: rgb(10, 112, 10);
     border: 1px solid transparent;
   }
   
