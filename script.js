@@ -30,36 +30,43 @@ const getSearchedGender = (name) => {
 // Retrieve saved data after refreshing or closing the page
 tbodyGender.innerHTML = localStorage.getItem('table');
 
-// Show data in the table after clicking the search button
-searchBtn.onclick = () => {
+// Event listener for the search button
+searchBtn.addEventListener('click', () => {
     checkDuplicateEntries();
-};
+});
 
-// Clear the DOM after clicking the clear/delete button
-clearBtn.onclick = () => {
-    if(tbodyGender.innerHTML === '') {
+// Event listener for the clear button
+clearBtn.addEventListener('click', () => {
+    if (tbodyGender.innerHTML === '') {
         alert('No data found in the table. Please perform a search.');
-    } else if(confirm('Are you sure you want to clear all data?')) {
+    } else if (confirm('Are you sure you want to clear all data?')) {
         alert('Table data cleared successfully.');
         localStorage.clear();
         inputSearch.innerText = '';
         window.location.reload();
     }
-};
+});
 
 // Function to check for duplicate entries before searching
 const checkDuplicateEntries = () => {
     let found = false;
     document.querySelectorAll("#tbodyGender td").forEach(cell => {
-        if(cell.innerText === inputSearch.value){
-             found = true;
+        if (cell.innerText === inputSearch.value) {
+            found = true;
         }
     });
-    if(found === true) {
+    if (found === true) {
         alert(`${inputSearch.value} is already searched. Please enter a new name.`);
-    } else if(inputSearch.value === '') {
+    } else if (inputSearch.value === '') {
         alert('Please enter a name to search.');
     } else {
         getSearchedGender(inputSearch.value);
     }
 };
+
+// Event listener for input field to trigger search on Enter key press
+inputSearch.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        checkDuplicateEntries();
+    }
+});

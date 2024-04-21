@@ -83,7 +83,7 @@
     align-items: center;
     color: var(--clr-gray500);
     font-size: 0.9rem;
-    background-color: peru;
+    background-color: rgb(14, 219, 209);
   }
   
   /* Table styles */
