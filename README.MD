@@ -1,5 +1,5 @@
 # Gender-Predictor-App
-This project uses genderize.io API to fetch the searched name's gender.
+This project uses genderize.io API to fetch the searched name's gender.Users can input a name, and the app will fetch data from the Genderize.io API to predict the gender associated with that name. The predicted gender and probability (if available) are then displayed to the user.
 
 ## Date 2024/04/13
 
@@ -8,13 +8,54 @@ This project uses genderize.io API to fetch the searched name's gender.
  ## Description
  This project is a simple web app that predicts the gender based on the inputted name,whereby the users can input a name, and the app will fetch data from the Genderize.io API to predict the gender associated with that name. The predicted gender and probability (if available) are then displayed to the user.
 
+ ## How to Use
+
+
+## Requirements
+  A computer with a bash terminal and node installed.
+  
+  Access to the internet.
+
+
+
+## Installation process
+ 1.clone this repository using
+
+ ```
+ git clone https://github.com/lowkey-joanne/Gender-Predictor-App
+ ```
+ or by downloading a ZIP file of the code.
+
+2.The repository, if downloaded as a .zip file will need to be extracted to your preferred location.
+
+3.Navigate to the project folder on your bash terminal.
+
+4.Install dependancies using
+```
+  npm install
+  ```
+5.Run the server using this lines
+```
+    npm install -g json-server
+    json-server --watch db.json
+```
+
+6.Run the application using
+
+```
+node index.js
+```
+
+
 ## Technologies used
 Javascript
 HTML
 CSS
  
  ## Support and contact details
- github.com/lowkey-joanne
+ Incase of any query, need for collaboration or issues with this code, feel free to reach me at
+ joanne.mbula@student.moringaschool.com
+
 
 ## license
 MIT License
